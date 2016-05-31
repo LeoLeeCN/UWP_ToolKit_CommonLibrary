@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="UWPToolkit.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UWPToolkit"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="#FFECECEC">
+        <ScrollViewer ScrollViewer.HorizontalScrollBarVisibility="Hidden" ScrollViewer.VerticalScrollBarVisibility="Hidden">
+            <StackPanel Orientation="Vertical" ManipulationMode="System,TranslateX">
+                <Grid x:ConnectionId='1' Background="White" Height="48"                                Margin="0,4,0,0">
+                    <TextBlock Text="Picture Editor(Crop,Ink)" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                </Grid>
+                <Grid x:ConnectionId='2' Background="White" Height="48"                                 Margin="0,4,0,0">
+                    <TextBlock Text="Picture Preview(DoubleClick_Zoom,Drag)" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                </Grid>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>
+
