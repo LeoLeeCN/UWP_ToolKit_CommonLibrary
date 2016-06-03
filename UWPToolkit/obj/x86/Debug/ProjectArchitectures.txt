@@ -1,2 +1,0 @@
-D:\Test_Work\UWPToolkit\CommonLibrary\CommonLibrary.csproj;x86
-D:\Test_Work\UWPToolkit\UWPToolkit\UWPToolkit.csproj;x86

@@ -11,7 +11,8 @@
 
     <Grid Name="grid" Background="{ThemeResource TKMaskColorBrush}" Tapped="grid_Tapped">
         <ScrollViewer Name="sv"
-                      HorizontalScrollBarVisibility="Visible" 
+                      HorizontalScrollBarVisibility="Hidden" 
+                      VerticalScrollBarVisibility="Hidden"
                       HorizontalAlignment="Stretch" 
                       VerticalAlignment="Stretch"
                       ZoomMode="Enabled"

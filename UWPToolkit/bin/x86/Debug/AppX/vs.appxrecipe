@@ -9,7 +9,7 @@
     <SolutionConfiguration>Debug|x86</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>a218bdb6-a0b2-428b-92af-89ffbe499b4c</PackageIdentityName>
-    <IntermediateOutputPath>D:\Test_Work\UWPToolkit\UWPToolkit\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>D:\GitHub\UWP_Toolkit\UWP_Toolkit\UWPToolkit\obj\x86\Debug\</IntermediateOutputPath>
     <RegisteredManifestChecksum>F18C2E4D26199C513E7B89EE9B8CCD0E764DD72D4372849DC37B1AF521FC9EDB</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>a218bdb6-a0b2-428b-92af-89ffbe499b4c_1.0.0.0_x86__pd7r2wjmk9csm</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>a218bdb6-a0b2-428b-92af-89ffbe499b4c_pd7r2wjmk9csm!App</RegisteredUserModeAppID>
@@ -19,16 +19,16 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="D:\Test_Work\UWPToolkit\UWPToolkit\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="D:\GitHub\UWP_Toolkit\UWP_Toolkit\UWPToolkit\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-05-31T07:02:40.274</Modified>
+      <Modified>2016-05-31T07:31:18.435</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="D:\Test_Work\UWPToolkit\UWPToolkit\bin\x86\Debug\UWPToolkit.exe">
+    <AppxPackagedFile Include="D:\GitHub\UWP_Toolkit\UWP_Toolkit\UWPToolkit\bin\x86\Debug\UWPToolkit.exe">
       <PackagePath>entrypoint\UWPToolkit.exe</PackagePath>
-      <Modified>2016-05-31T07:02:40.000</Modified>
+      <Modified>2016-05-31T07:31:17.192</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UAP\v0.8.0.0\ExtensionSDKs\InkToolbarControl\0.3.2\References\CommonConfiguration\neutral\Microsoft.Labs.InkToolbarControl.winmd">
       <PackagePath>Microsoft.Labs.InkToolbarControl.winmd</PackagePath>
@@ -466,7 +466,7 @@
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
       <Modified>2016-05-15T19:04:12.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Test_Work\UWPToolkit\CommonLibrary\bin\x86\Debug\CommonLibrary.dll">
+    <AppxPackagedFile Include="D:\GitHub\UWP_Toolkit\UWP_Toolkit\CommonLibrary\bin\x86\Debug\CommonLibrary.dll">
       <PackagePath>CommonLibrary.dll</PackagePath>
       <Modified>2016-05-31T06:48:43.711</Modified>
     </AppxPackagedFile>
@@ -474,49 +474,49 @@
       <PackagePath>Microsoft.Labs.InkToolbarControl.dll</PackagePath>
       <Modified>2016-04-12T09:56:14.964</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Test_Work\UWPToolkit\UWPToolkit\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="D:\GitHub\UWP_Toolkit\UWP_Toolkit\UWPToolkit\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2016-05-31T03:53:54.410</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Test_Work\UWPToolkit\UWPToolkit\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="D:\GitHub\UWP_Toolkit\UWP_Toolkit\UWPToolkit\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2015-09-20T09:20:50.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Test_Work\UWPToolkit\UWPToolkit\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="D:\GitHub\UWP_Toolkit\UWP_Toolkit\UWPToolkit\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T09:20:50.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Test_Work\UWPToolkit\UWPToolkit\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\GitHub\UWP_Toolkit\UWP_Toolkit\UWPToolkit\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T09:20:50.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Test_Work\UWPToolkit\UWPToolkit\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\GitHub\UWP_Toolkit\UWP_Toolkit\UWPToolkit\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T09:20:50.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Test_Work\UWPToolkit\UWPToolkit\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="D:\GitHub\UWP_Toolkit\UWP_Toolkit\UWPToolkit\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T09:20:50.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Test_Work\UWPToolkit\UWPToolkit\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="D:\GitHub\UWP_Toolkit\UWP_Toolkit\UWPToolkit\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T09:20:50.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Test_Work\UWPToolkit\UWPToolkit\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\GitHub\UWP_Toolkit\UWP_Toolkit\UWPToolkit\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T09:20:50.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Test_Work\UWPToolkit\UWPToolkit\bin\x86\Debug\UWPToolkit.xr.xml">
+    <AppxPackagedFile Include="D:\GitHub\UWP_Toolkit\UWP_Toolkit\UWPToolkit\bin\x86\Debug\UWPToolkit.xr.xml">
       <PackagePath>UWPToolkit.xr.xml</PackagePath>
       <Modified>2016-05-31T06:49:49.369</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Test_Work\UWPToolkit\CommonLibrary\bin\x86\Debug\CommonLibrary.xr.xml">
+    <AppxPackagedFile Include="D:\GitHub\UWP_Toolkit\UWP_Toolkit\CommonLibrary\bin\x86\Debug\CommonLibrary.xr.xml">
       <PackagePath>CommonLibrary\CommonLibrary.xr.xml</PackagePath>
       <Modified>2016-05-31T06:26:18.597</Modified>
     </AppxPackagedFile>
@@ -524,13 +524,13 @@
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2016-04-27T10:49:08.459</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Test_Work\UWPToolkit\UWPToolkit\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="D:\GitHub\UWP_Toolkit\UWP_Toolkit\UWPToolkit\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-05-31T07:00:11.071</Modified>
+      <Modified>2016-05-31T07:31:18.244</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Test_Work\UWPToolkit\UWPToolkit\bin\x86\Debug\Core\UWPToolkit.exe">
+    <AppxPackagedFile Include="D:\GitHub\UWP_Toolkit\UWP_Toolkit\UWPToolkit\bin\x86\Debug\Core\UWPToolkit.exe">
       <PackagePath>UWPToolkit.exe</PackagePath>
-      <Modified>2016-05-31T07:02:40.271</Modified>
+      <Modified>2016-05-31T07:31:18.431</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
