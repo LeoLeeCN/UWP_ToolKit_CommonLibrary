@@ -167,15 +167,16 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <SDKReference Include="InkToolbarControl, Version=0.3.2">
-      <Name>InkToolbar Control</Name>
-    </SDKReference>
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\CommonLibrary\CommonLibrary.csproj">
       <Project>{1faa2db6-1203-4df4-ac1a-8ec415f6681d}</Project>
       <Name>CommonLibrary</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Labs.InkToolbarControl, Version=255.255.255.255, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\InkToolbarControl\$(PlatformTarget)\$(Configuration)\Microsoft.Labs.InkToolbarControl.winmd</HintPath>
+    </Reference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
