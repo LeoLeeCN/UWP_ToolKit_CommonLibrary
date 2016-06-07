@@ -95,6 +95,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\BasePage.cs" />
     <Compile Include="Controls\PictureCropControl.xaml.cs">
       <DependentUpon>PictureCropControl.xaml</DependentUpon>
     </Compile>
