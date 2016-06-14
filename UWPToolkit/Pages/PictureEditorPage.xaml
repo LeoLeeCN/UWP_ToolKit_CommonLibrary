@@ -7,13 +7,14 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="#FFECECEC">
+    <Grid Background="White">
         <ScrollViewer ScrollViewer.HorizontalScrollBarVisibility="Hidden" ScrollViewer.VerticalScrollBarVisibility="Hidden">
             <StackPanel Orientation="Vertical" ManipulationMode="System,TranslateX">
-                <Grid Background="White" Height="48" Tapped="Select_Picture" Margin="0,4,0,0">
+                <Line X1="1" Stroke="Gray" StrokeThickness="0.5" Stretch="Fill"></Line>
+                <Grid Background="White" Height="48" Tapped="Select_Picture">
                     <TextBlock Text="Click to Select Picture" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
                 </Grid>
-
+                <Line X1="1" Stroke="Gray" StrokeThickness="0.5" Stretch="Fill"></Line>
                 <Image Name="img" Margin="0,4,0,0"></Image>
             </StackPanel>
         </ScrollViewer>

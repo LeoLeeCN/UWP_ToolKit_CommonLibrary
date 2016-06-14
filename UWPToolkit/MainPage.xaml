@@ -5,18 +5,31 @@
     xmlns:local="using:UWPToolkit"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+    mc:Ignorable="d" SizeChanged="Page_SizeChanged">
 
-    <Grid Background="#FFECECEC">
-        <ScrollViewer ScrollViewer.HorizontalScrollBarVisibility="Hidden" ScrollViewer.VerticalScrollBarVisibility="Hidden">
-            <StackPanel Orientation="Vertical" ManipulationMode="System,TranslateX">
-                <Grid Background="White" Height="48" Tapped="Picture_Editor_Tapped" Margin="0,4,0,0">
-                    <TextBlock Text="Picture Editor(Crop,Ink)" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
-                </Grid>
-                <Grid Background="White" Height="48" Tapped="Picture_Preview_Tapped" Margin="0,4,0,0">
-                    <TextBlock Text="Picture Preview(DoubleClick_Zoom,Drag)" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
-                </Grid>
-            </StackPanel>
-        </ScrollViewer>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" x:Name="Left_Col"></ColumnDefinition>
+            <ColumnDefinition Width="1"></ColumnDefinition>
+            <ColumnDefinition Width="3*" x:Name="Right_Col"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Frame Name="Left_Frame" SizeChanged="Left_Frame_SizeChanged">
+            <ScrollViewer Grid.Column="0" Background="White" ScrollViewer.HorizontalScrollBarVisibility="Hidden" ScrollViewer.VerticalScrollBarVisibility="Hidden">
+                <StackPanel Orientation="Vertical" ManipulationMode="System,TranslateX">
+                    <Line X1="1" Stroke="Gray" StrokeThickness="0.5" Stretch="Fill"></Line>
+                    <Grid Background="White" Height="48" Tapped="Picture_Editor_Tapped">
+                        <TextBlock Text="Picture Editor(Crop,Ink)" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                    </Grid>
+                    <Line X1="1" Stroke="Gray" StrokeThickness="0.5" Stretch="Fill"></Line>
+                    <Grid Background="White" Height="48" Tapped="Picture_Preview_Tapped">
+                        <TextBlock Text="Picture Preview(DoubleClick_Zoom,Drag)" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                    </Grid>
+                    <Line X1="1" Stroke="Gray" StrokeThickness="0.5" Stretch="Fill"></Line>
+                </StackPanel>
+            </ScrollViewer>
+        </Frame>
+        <Line Y1="1" Stroke="Gray" StrokeThickness="0.5" Grid.Column="1" Stretch="Fill"></Line>
+
+        <Frame Name="Right_Frame" Grid.Column="2"></Frame>
     </Grid>
 </Page>

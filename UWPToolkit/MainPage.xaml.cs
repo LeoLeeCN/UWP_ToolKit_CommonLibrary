@@ -30,12 +30,35 @@ namespace UWPToolkit
 
         private void Picture_Editor_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(PictureEditorPage));
+            this.Right_Frame.Navigate(typeof(PictureEditorPage));
         }
 
         private void Picture_Preview_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(PreviewPicturePage));
+            this.Right_Frame.Navigate(typeof(PreviewPicturePage));
+        }
+
+        private void Left_Frame_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+            
+        }
+
+        private GridLength _glLeft = new GridLength(720d);
+        private void Page_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+            GridLength glAlign = new GridLength(e.NewSize.Width);
+            if (this.ActualWidth < 720)
+            {
+                this.Left_Col.Width = glAlign;
+                this.Right_Col.Width = glAlign;
+                this.Right_Frame.SetValue(Grid.ColumnProperty, 0);
+            }
+            else
+            {
+                this.Left_Col.Width = new GridLength(2, GridUnitType.Star);
+                this.Right_Col.Width = new GridLength(3, GridUnitType.Star);
+                this.Right_Frame.SetValue(Grid.ColumnProperty, 2);
+            }
         }
     }
 }
