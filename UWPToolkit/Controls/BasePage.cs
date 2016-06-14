@@ -61,10 +61,7 @@ namespace UWPToolkit.Controls
 
         private void BasePage_BackRequested(object sender, BackRequestedEventArgs e)
         {
-            if(this.Frame.CanGoBack)
-            {
-                this.Frame.GoBack();
-            }
+            MasterPage.BackRequest();
         }
 
         private void BasePage_Unloaded(object sender, RoutedEventArgs e)
@@ -156,10 +153,7 @@ namespace UWPToolkit.Controls
         {
             if (action == 0)
             {
-                if (this.Frame.CanGoBack)
-                {
-                    this.Frame.GoBack();
-                }
+                MasterPage.BackRequest();
             }
             else
             {

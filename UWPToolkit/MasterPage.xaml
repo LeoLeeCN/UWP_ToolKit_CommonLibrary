@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="UWPToolkit.MainPage"
+    x:Class="UWPToolkit.MasterPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:UWPToolkit"
@@ -13,7 +13,7 @@
             <ColumnDefinition Width="1"></ColumnDefinition>
             <ColumnDefinition Width="3*" x:Name="Right_Col"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <Frame Name="Left_Frame" SizeChanged="Left_Frame_SizeChanged">
+        <Frame Name="Left_Frame">
             <ScrollViewer Grid.Column="0" Background="White" ScrollViewer.HorizontalScrollBarVisibility="Hidden" ScrollViewer.VerticalScrollBarVisibility="Hidden">
                 <StackPanel Orientation="Vertical" ManipulationMode="System,TranslateX">
                     <Line X1="1" Stroke="Gray" StrokeThickness="0.5" Stretch="Fill"></Line>

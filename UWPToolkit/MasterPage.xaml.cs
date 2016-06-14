@@ -22,26 +22,26 @@ namespace UWPToolkit
     /// <summary>
     /// 可用于自身或导航至 Frame 内部的空白页。
     /// </summary>
-    public sealed partial class MainPage : Page
+    public sealed partial class MasterPage : Page
     {
-        public MainPage()
+        private static MasterPage _instance = null;
+        public MasterPage()
         {
             this.InitializeComponent();
+            _instance = this;
+            this.Right_Frame.Navigate(typeof(Page));
         }
 
         private void Picture_Editor_Tapped(object sender, TappedRoutedEventArgs e)
         {
+            this.Right_Frame.Visibility = Visibility.Visible;
             this.Right_Frame.Navigate(typeof(PictureEditorPage));
         }
 
         private void Picture_Preview_Tapped(object sender, TappedRoutedEventArgs e)
         {
+            this.Right_Frame.Visibility = Visibility.Visible;
             this.Right_Frame.Navigate(typeof(PreviewPicturePage));
-        }
-
-        private void Left_Frame_SizeChanged(object sender, SizeChangedEventArgs e)
-        {
-            
         }
 
         private GridLength _glLeft = new GridLength(720d);
@@ -60,6 +60,16 @@ namespace UWPToolkit
                 this.Right_Col.Width = new GridLength(3, GridUnitType.Star);
                 this.Right_Frame.SetValue(Grid.ColumnProperty, 2);
             }
+        }
+
+        public static void BackRequest()
+        {
+            if (_instance.Right_Frame.CanGoBack)
+            {
+                _instance.Right_Frame.GoBack();
+            }
+
+            _instance.Right_Frame.Visibility = Visibility.Collapsed;
         }
     }
 }
