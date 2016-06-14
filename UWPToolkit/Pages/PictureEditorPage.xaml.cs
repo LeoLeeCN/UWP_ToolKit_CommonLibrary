@@ -36,6 +36,8 @@ namespace UWPToolkit.Pages
         private async void Select_Picture(object sender, TappedRoutedEventArgs e)
         {
             var file = await FileHelper.GetSinglePictureFileFromAlbumAsync("jpeg,jpg,png,gif");
+            if (file == null)
+                return;
             PictureEditor it = new PictureEditor(file);
             it.OK_HandlerEvent += PictureEditor_OK_HandlerEvent;
             it.Show();

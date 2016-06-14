@@ -32,6 +32,8 @@ namespace UWPToolkit.Pages
         private async void Select_Picture(object sender, TappedRoutedEventArgs e)
         {
             var file = await FileHelper.GetSinglePictureFileFromAlbumAsync("jpeg,jpg,png,gif");
+            if (file == null)
+                return;
             img.Source = await ImageHelper.StorageFileToWriteableBitmap(file);
 
             PreviewPictureControl previewPic = new PreviewPictureControl(file);
